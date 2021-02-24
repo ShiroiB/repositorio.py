@@ -17,7 +17,7 @@ tela = pygame.display.set_mode((LARGURA, ALTURA))
 
 pygame.display.set_caption('Caneca Game')
 
-sprite_sheet = pygame.image.load(os.path.join(diretorio_principal, 'kk.png')).convert_alpha()
+sprite_sheet = pygame.image.load(os.path.join(diretorio_principal, 'garrafa_termica.png')).convert_alpha()
 
 class Dino(pygame.sprite.Sprite):
     def __init__(self):
@@ -58,7 +58,7 @@ class Dino(pygame.sprite.Sprite):
 class N(pygame.sprite.Sprite):
      def __init__(self):
          pygame.sprite.Sprite.__init__(self)
-         self.image =sprite_sheet.subsurface((4*23,0), (30, 30))
+         self.image =sprite_sheet.subsurface((4*24,0), (30, 30))
          self.image = pygame.transform.scale(self.image, (100, 100))
          self.rect = self.image.get_rect()
          #self.rect.center = (100,100)
